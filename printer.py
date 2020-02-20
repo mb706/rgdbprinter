@@ -127,7 +127,7 @@ class R:
         return val['u']['closxp']['body']
 
     def dataptr(val):
-        adr = val['u'].address.cast(Types.int_ptr_t) + 2
+        adr = val['u'].address.cast(Types.int_ptr_t) + 4
         return adr.cast(Types.void_ptr_t)
 
     def char_value(val):
